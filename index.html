@@ -1,34 +1,284 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/tech-stack.css">
     <link rel="stylesheet" href="./css/custom.css">
 </head>
+
 <body>
     <header class="text-center">
         <div id="profile-img"></div>
         <div id="profile-text">
             <div id="profile-name">민초로</div>
             <div id="profile-email">
-                <i class="far fa-envelope"></i>
-                <a href="mailto:blinglnav@gmail.com">blinglnav@gmail.com</a>
+                <a href="mailto:blinglnav@gmail.com">
+                    <i class="far fa-envelope"></i> blinglnav@gmail.com
+                </a>
             </div>
             <div id="profile-github">
-                <i class="fab fa-github"></i>
-                <a href="https://github.com/blinglnav">blinglnav</a>
+                <a href="https://github.com/blinglnav" target="blank_">
+                    <i class="fab fa-github"></i> @blinglnav
+                </a>
+            </div>
+            <div id="profile-github">
+                <i class="fas fa-rss"></i>
+                <a href="https://blog.superclass.io" target="blank_"> blog</a>
             </div>
         </div>
     </header>
+    <div class="container">
+        <article id="projects">
+            <h1>Projects</h1>
+            <section class="section-item">
+                <h2>학술정보관 열람실 현황 서비스 개선</h2>
+                <div class="project-links">
+                    <div class="project-link-item">
+                        <i class="fas fa-code-branch"></i>
+                        <a href="https://github.com/blinglnav/usc-library-check" target="blank_">https://github.com/blinglnav/usc-library-check</a>
+                    </div>
+                    <div class="project-link-item">
+                        <i class="fas fa-link"></i>
+                        <a href="http://superclass.io:8080" target="blank_">http://superclass.io:8080</a>
+                    </div>
+                </div>
+                <div class="project-img">
+                    <img src="https://i.imgur.com/trcAj6f.png" alt="usc-library-check 서비스 화면">
+                </div>
+                <div class="project-desc">
+                    학술정보관(교내 도서관) 남은 좌석을 확인할 수 있는 서비스입니다.
+                    <br> 기존에 학술정보관에서 제공되던 페이지(
+                    <a href="http://libseat.unist.ac.kr/EZ5500/SEAT/RoomStatus.aspx" target="blank_">http://libseat.unist.ac.kr/EZ5500/SEAT/RoomStatus.aspx</a>)는 일정 시간마다 새로고침 되어서 계속 확인하기 불편했습니다. 이 프로젝트에서는 위
+                    페이지에서 정보를 스크래핑, 가공 한 데이터를 일정 시간마다 ajax로 요청하여 새로고침 되는 현상이 없도록 수정하였습니다.
+                </div>
+                <div class="project-tech-stack">
+                    <span class="stack-badge django-2-0"></span>
+                    <span class="stack-badge requests"></span>
+                    <span class="stack-badge beautiful-soup-4"></span>
+                    <span class="stack-badge jquery"></span>
+                    <span class="stack-badge bootstrap-4"></span>
+                </div>
+            </section>
+            <section class="section-item">
+                <h2>총학생회 프린터 당직 자동화</h2>
+                <div class="project-links">
+                    <div class="project-link-item">
+                        <i class="fas fa-code-branch"></i>
+                        <a href="https://github.com/blinglnav/usc-printer-dog" target="blank_">https://github.com/blinglnav/usc-printer-dog</a>
+                    </div>
+                </div>
+                <div class="project-img">
+                    <img src="https://i.imgur.com/AkxMBT0.png" alt="usc-printer-dog 당직 공지">
+                </div>
+                <div class="project-desc">
+                    총학생회 프린터 사업을 위해 제작한 windows native 앱입니다.
+                    <br> 이전에 직접 확인했던 방법을 학생증 RFID를 이용해서 자동화했습니다.
+                    <br> 학생증에서 학번을 추출한 후 DB의 데이터와 비교해서 학생회비 납부 여부를 확인합니다
+                </div>
+                <div class="project-tech-stack">
+                    <span class="stack-badge c-sharp"></span>
+                </div>
+            </section>
+            <section class="section-item">
+                <h2>Find My Camera</h2>
+                <div class="project-links">
+                    <div class="project-link-item">
+                        <i class="fas fa-code-branch"></i>
+                        <a href="https://github.com/blinglnav/find-my-camera" target="blank_">https://github.com/blinglnav/find-my-camera</a>
+                    </div>
+                </div>
+                <div class="project-img">
+                    <img src="https://i.imgur.com/kU9OnjD.png" alt="프로그램 실행 후 결과 화면">
+                </div>
+                <div class="project-desc">
+                    필름 카메라 관련 물품을 판매하는 사이트인 the35mm.com에서 품절된 상품을 확인하기 불편했기 때문에 구입 가능한 필름 카메라를 이미지로 다운받아주는 프로그램입니다.
+                </div>
+                <div class="project-tech-stack">
+                    <span class="stack-badge python"></span>
+                    <span class="stack-badge beautiful-soup-4"></span>
+                </div>
+            </section>
+            <section class="section-item">
+                <h2>Bobusang Book (보부상 헌책방)</h2>
+                <div class="project-links">
+                </div>
+                <div class="project-img">
+                    <div id="bobusang-book-img-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#bobusang-book-img-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#bobusang-book-img-carousel" data-slide-to="1"></li>
+                            <li data-target="#bobusang-book-img-carousel" data-slide-to="2"></li>
+                            <li data-target="#bobusang-book-img-carousel" data-slide-to="3"></li>
+                            <li data-target="#bobusang-book-img-carousel" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="https://i.imgur.com/ujl6Ahb.jpg" alt="랜딩 페이지">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://i.imgur.com/v6lxdlE.jpg" alt="인수 요청 화면">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://i.imgur.com/OcTMxiZ.jpg" alt="관리자 페이지 - 신청 목록">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://i.imgur.com/eyin9sY.jpg" alt="관리자 페이지 - detail">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://i.imgur.com/5NLMkAj.jpg" alt="영수증">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#bobusang-book-img-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#bobusang-book-img-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-desc">
+                    중고 물품 거래 창업팀 "보부상"에서 전공서적 거래를 위해 만들었던 서비스입니다. 중고 서적의 인수 신청부터 판매까지의 물류관리를 담당합니다.
+                </div>
+                <div class="project-tech-stack">
+                    <span class="stack-badge django-1-9"></span>
+                    <span class="stack-badge bootstrap-3"></span>
+                </div>
+            </section>
+            <section class="section-item">
+                <h2>신입생 오리엔테이션 / 축제 사진 배포</h2>
+                <div class="project-links">
+                    <div class="project-link-item">
+                    </div>
+                </div>
+                <div class="project-img">
+                    <img src="https://i.imgur.com/8RqC7Bp.png" alt="프로그램 실행 후 결과 화면">
+                </div>
+                <div class="project-desc">
+                    2016년부터 2018년까지의 신입생 오리엔테이션, 축제 행사 사진 배포를 담당했습니다.<br>
+                    계정 차단 등의 우려로 인해서 dropbox나 google drive 같은 클라우드 스토리지를 이용할 수 없었기 때문에 vultr에서 제공하는 클라우드 호스팅을 파일 서버로 이용했습니다.<br>
+                    초기에는 1개의 서버를 이용해서 배포를 진행했지만 병목이 있어서 최근 배포에서는 초기에는 5개로 시작해서 시간이 지날수록 서버 수를 줄여가는 방향으로 진행했습니다.<br>
+                    파일 서버를 랜덤하게 선택하게 하기 위해 서버의 주소는 페이지 로딩 시 ajax로 api 서버에 요청해서 가져오게 합니다.
+                </div>
+                <div class="project-tech-stack">
+                    <span class="stack-badge django-2-0"></span>
+                    <span class="stack-badge bootstrap-4"></span>
+                    <span class="stack-badge jquery"></span>
+                </div>
+            </section>
+        </article>
+        <article id="open-source-contribs">
+            <h1>Open Source Contributions</h1>
+            <section class="section-item">
+                <h2>django-slack-oauth</h2>
+                <div class="osc-links">
+                        <div class="osc-link-item">
+                            <i class="fas fa-code-branch"></i>
+                            <a href="https://github.com/izdi/django-slack-oauth" target="blank_">https://github.com/izdi/django-slack-oauth</a>
+                        </div>
+                        <div class="osc-link-item">
+                            <i class="fas fa-code-branch"></i>
+                            <a href="https://github.com/blinglnav/django-slack-oauth" target="blank_">https://github.com/blinglnav/django-slack-oauth (forked repo)</a>
+                        </div>
+                </div>
+                <div class="osc-img">
+                </div>
+                <div class="osc-desc">
+                    서비스와 slack 연동을 위해 파이썬 패키지를 찾아보던 중 해당 패키지를 찾았지만<br>
+                    django 1.x 버전에 맞게 작성되어 있어서 2.x 버전에도 호환되도록 수정했습니다.
+                </div>
+                <div class="osc-tech-stack">
+                    <span class="stack-badge django-2-0"></span>
+                </div>
+            </section>
+        </article>
+        <article id="work-exps">
+            <h1>Work Experiences</h1>
+            <section class="section-item">
+                    <h2>페달링(주)</h2>
+                    <div class="work-info">
+                        <div class="position">개발 인턴</div>
+                        <div class="period">2016.09 ~ 2016.11</div>
+                    </div>
+                    <div class="work-links">
+                    </div>
+                    <div class="work-img">
+                    </div>
+                    <div class="work-desc">
+                        마케팅 캠페인별로 유입 횟수 측정을 위한 내부 상담 관리 페이지 제작
+                    </div>
+                    <div class="work-tech-stack">
+                        <span class="stack-badge rails"></span>
+                        <span class="stack-badge react"></span>
+                        <span class="stack-badge bootstrap-3"> (scss)</span>
+                    </div>
+                </section>
+                <section class="section-item">
+                    <h2>보부상 (창업팀)</h2>
+                    <div class="work-info">
+                        <div class="position">Co-founder / Developer</div>
+                        <div class="period">2016.01 ~ 2016.09</div>
+                    </div>
+                    <div class="work-links">
+                    </div>
+                    <div class="work-img">
+                    </div>
+                    <div class="work-desc">
+                        교내 중고 거래 서비스 진행.<br>
+                        교내 중고 전공 서적 거래 서비스 보부상 헌책방 진행.
+                    </div>
+                    <div class="work-tech-stack">
+                        <span class="stack-badge django-1-9"></span>
+                        <span class="stack-badge bootstrap-3"></span>
+                    </div>
+                </section>
+        </article>
+        <article id="educations">
+            <h1>Educations</h1>
+            <section class="section-item">
+                <h2>UNIST (울산과학기술원)</h2>
+                <div class="work-info">
+                    <div class="period">2015.03 ~ 현재 재학중</div>
+                </div>
+                <div class="edu-desc">
+                    Computer Science and Engineering (학사과정)
+                </div>
+            </section>
+        </article>
+        <article id="skills">
+            <h1>Skills</h1>
+            <section class="section-item">
+                <div class="work-tech-stack">
+                    <span class="stack-badge python"></span>
+                    <span class="stack-badge django"></span>
+                    <span class="stack-badge scraping"> (BeautifulSoup, Selenium)</span>
+                </div>
+            </section>
+        </article>
+        <article id="interested-in">
+            <h1>Interested in</h1>
+            <section class="section-item">
+                <div class="work-tech-stack">
+                    <span class="stack-badge python"></span>
+                    <span class="stack-badge django"></span>
+                    <span class="stack-badge vue-js"></span>
+                    <span class="stack-badge machine-learning"> (tensorflow, keras)</span>
+                </div>
+            </section>
+        </article>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -40,4 +290,5 @@
             integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
             crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,35 +1,4 @@
-header {
-    background-image: url('../img/profile-img-blur.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 5em 0;
-    color: white;
-}
-
-#profile-img {
-    background-image: url('../img/profile-img.jpg');
-    background-size: cover;
-    width: 8em;
-    height: 8em;
-    border-radius: 4em;
+#bobusang-book-img-carousel {
     display: inline-block;
-    border: 1px solid #999;
-}
-
-#profile-text > div > a {
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#profile-text > div > a, #profile-text > div > svg {
-    text-decoration: none;
-    color: #ddd;
-}
-
-#profile-text > div > a:hover {
-    color: white;
-}
-
-#profile-name {
-    font-size: 3rem;
-    font-family: 'Nanum Myeongjo', serif;
+    max-width: 602px;
 }

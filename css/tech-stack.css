@@ -1,0 +1,105 @@
+.stack-badge {
+    color: white;
+    font-size: 0.8em;
+    border-radius: .5em;
+    padding: 0 0.5em;
+}
+
+span.django-2-0, span.django {
+    background-color: #00a0dc;
+}
+span.django-2-0::before {
+    content: "django 2.0";
+}
+span.django::before {
+    content: "django";
+}
+
+span.requests {
+    background-color: #8d6cab;
+}
+span.requests::before {
+    content: "requests";
+}
+
+span.beautiful-soup-4, span.scraping {
+    background-color: #00aeb3;
+}
+span.beautiful-soup-4::before {
+    content: "BeautifulSoup4";
+}
+span.scraping::before {
+    content: "Scraping";
+}
+
+span.jquery {
+    background-color: #edb220;
+}
+span.jquery::before {
+    content: "jQuery";
+}
+
+span.bootstrap-4 {
+    background-color: #7cb82f;
+}
+span.bootstrap-4::before {
+    content: "Bootstrap4";
+}
+
+span.c-sharp {
+    background-color: #e68523;
+}
+span.c-sharp::before {
+    content: "C#";
+}
+
+span.python {
+    background-color: #dd5143;
+}
+span.python::before {
+    content: "Python";
+}
+
+span.django-1-9 {
+    background-color: #68c7ec;
+    color: black;
+}
+span.django-1-9::before {
+    content: "django 1.9";
+}
+
+span.bootstrap-3 {
+    background-color: #b0d775;
+    color: black;
+}
+span.bootstrap-3::before {
+    content: "Bootstrap3";
+}
+
+span.rails {
+    background-color: #dc4b89;
+}
+span.rails::before {
+    content: "Rails";
+}
+
+span.react {
+    background-color: #0b4971;
+}
+span.react::before {
+    content: "React.js";
+}
+
+span.vue-js {
+    background-color: #5b912d;
+}
+span.vue-js::before {
+    content: "Vue.js";
+}
+
+span.machine-learning {
+    background-color: #606264;
+}
+span.machine-learning::before {
+    content: "Machine Learning";
+}
